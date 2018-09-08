@@ -31,7 +31,7 @@ client.on('message', message => {
 
 
 client.on('ready', () => {                           
-client.user.setGame(`=help |=invite |=support`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
+client.user.setGame(`=help`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
@@ -40,7 +40,7 @@ client.user.setGame(`=help |=invite |=support`,'https://www.twitch.tv/fofodiscor
 
 client.on('message', msg => {
   if (msg.content === '=ownerbot') {
-    msg.reply('**OwnerBot <@382889731316514826>**');
+    msg.reply('**OwnerBot <@473244618067279872>**');
   }
 });
 
@@ -101,21 +101,6 @@ client.on('message', msg => {//msg
       msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
     }
   });;
-
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=invite') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
-
-  client.on('message', msg => {//msg
-    if (msg.content === '=support') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/476028851030458368/482643305335750678/1535141472722.png"})
-    }
-  });;
-
 
 client.on('message', msg => {
         if (msg.content.startsWith(`=warn`)) {
@@ -378,21 +363,6 @@ client.on("message", message => {
    message.channel.sendEmbed(embed)
     }
    });
-
-
-
-
-
-client.on("message", message => {
- if (message.content === "=support") {
-  const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
-      .setFooter('© BOMbot جميع الحقوق محفوظة 2018 لــبوت')
-      .addField('سيرفر الدعم الفني', `https://discord.gg/CXE42RP`)
-  message.author.send({embed});
-      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
- }
-});
 
 
 
